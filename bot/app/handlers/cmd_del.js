@@ -33,9 +33,9 @@ export default async function cmdDel(ctx) {
       }
 
       const stickerInSet = stickerSet.stickers
-        .filter(s => s.file_id === sticker.file_id).length === 0;
+        .filter(s => s.file_id === sticker.file_id).length > 0;
 
-      if (stickerInSet) {
+      if (!stickerInSet) {
         return await ctx.reply(`⚠️ Такого стикера нет в наборе.`, extra);
       }
 
