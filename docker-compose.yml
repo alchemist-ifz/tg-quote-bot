@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+
+    bot:
+        user: node
+        build:
+            context: .
+            dockerfile: ./bot/Dockerfile
+        restart: always
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "10m"
+                max-file: "3"
+        volumes:
+            - $PWD/bot/app:/app

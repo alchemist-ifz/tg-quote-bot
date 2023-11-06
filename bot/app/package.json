@@ -1,0 +1,28 @@
+{
+  "name": "tg_quote_bot",
+  "version": "0.0.1",
+  "description": "Телеграм бот для создания стикеров из сообщений",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "emoji-db": "^14.0.1",
+    "jimp": "^0.22.10",
+    "lottie-node": "^2.0.0",
+    "lru-cache": "^10.0.1",
+    "pino": "^8.16.1",
+    "runes": "^0.4.3",
+    "sharp": "^0.32.6",
+    "smartcrop-sharp": "^2.0.8",
+    "telegraf": "^4.15.0"
+  },
+  "devDependencies": {
+    "@telegraf/types": "^6.9.1"
+  }
+}
